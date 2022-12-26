@@ -1,17 +1,25 @@
 <template>
   <div class="home">
-    <h1>Home Page</h1>
+    <Navbar></Navbar>
+    <Authenticator></Authenticator>
+    <AuthHomeSection></AuthHomeSection>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar";
+import Authenticator from "@/components/Authenticator";
+import AuthHomeSection from "@/components/AuthHomeSection";
+import Footer from "@/components/Footer";
+
 export default {
   name: "HomeView",
-  components: {},
+  components: {Navbar,Authenticator,AuthHomeSection,Footer},
 };
 </script>
 <style>
-/* .modal-backdrop {
-  background-color: transparent;
-} */
+/*.modal-backdrop {*/
+/*  background-color: transparent;*/
+/*}*/
 </style>
